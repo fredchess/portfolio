@@ -10,13 +10,13 @@ $('document').ready(function () {
 
         main.addClass('blur')
         leftbar.addClass('left-0')
-        leftbar.removeClass('left-[-350px]')
+        leftbar.removeClass('left-[-1000px]')
 
         $(document).mousedown(function (e) {
             if ((e.target.id !== 'left-bar' && $(e.target).closest('#left-bar').length === 0) || e.target.id === 'close') {
                 main.removeClass('blur')
                 leftbar.removeClass('left-0')
-                leftbar.addClass('left-[-350px]')
+                leftbar.addClass('left-[-1000px]')
             }
         });
     })

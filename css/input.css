@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #E5E5E5;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+.b-container {
+    position: relative;
+}
+
+.active { background-color: #FFB400 }
+
+/*
+    Left vertical bar
+*/
+.left-bar {
+    background-color: #FFF;
+    padding: 50px 42px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    /*left: -3000px;*/
+    transition: left 1s;
+    z-index: 1;
+}
+
+.left-bar.show {
+    /*margin-left: 1px;*/
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+}
+
+.hr {
+    height: 2px;
+    width: 100%;
+    margin-bottom: 26px;
+    background-color: #F0F0F6;
+}
+
+.infos .text, .extraskills .text {
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.infos .text {
+    background-color: #FFB400;
+    padding: 1px 5px;
+}
+
+
+
+
+/*
+    Right vertical bar
+*/
+
+.right-bar {
+    background-color: #FAFAFA;
+    height: 100vh;
+    padding: 50px 34px;
+    position: fixed;
+    top: 0; right: 0;
+}
+
+.nav-items {
+    flex-direction: column;
+    height: 400px;
+}
+
+.nav-items a { background-color: #F0F0F6 }
+
+.nav-items a.active { background-color: #FFB400 }
+
+/*
+    main
+*/
+
+.main {
+    transition: margin-left .5s;
+}

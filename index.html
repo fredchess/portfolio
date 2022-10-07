@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Fredchess Portfolio</title>
+</head>
+<body>
+<div class="b-container relative">
+    <div id="left-bar" class="left-bar left-[-350px]">
+        <div class="close absolute right-[5px] top-[5px] cursor-pointer">
+            <i class="fa-solid fa-angles-left fa-2x text-orange" id="close"></i>
+        </div>
+        <div class="space-y-[31px] relative">
+            <div class="profile flex justify-center bg-[url('assets/images/profile.jpg')]">
+            </div>
+            <div class="name text-center space-y-3">
+                <div class="name font-bold text-black">
+                    <span>Frederick Essono</span>
+                </div>
+                <div class="role text-gray">
+                    <span>Full-Stack Dev</span>
+                </div>
+                <div class="socials flex justify-evenly">
+                <span class="fb h-[24px] w-[24px] bg-orange rounded-full flex items-center justify-center text-[11px]">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </span>
+                    <span class="fb h-[24px] w-[24px] bg-orange rounded-full flex items-center justify-center text-[11px]">
+                    <i class="fa-brands fa-instagram"></i>
+                </span>
+                    <span class="fb h-[24px] w-[24px] bg-orange rounded-full flex items-center justify-center text-[11px]">
+                    <i class="fa-brands fa-twitter"></i>
+                </span>
+                    <span class="fb h-[24px] w-[24px] bg-orange rounded-full flex items-center justify-center text-[11px]">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </span>
+                    <span class="fb h-[24px] w-[24px] bg-orange rounded-full flex items-center justify-center text-[11px]">
+                    <i class="fa-brands fa-youtube"></i>
+                </span>
+                    <span class="fb h-[24px] w-[24px] bg-orange rounded-full flex items-center justify-center text-[11px]">
+                    <i class="fa-solid fa-basketball"></i>
+                </span>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div class="infos space-y-[9px]">
+                <div class="age flex justify-between">
+                    <span class="text">Age:</span>
+                    <span class="value">25</span>
+                </div>
+                <div class="residence flex justify-between">
+                    <span class="text">Residence:</span>
+                    <span class="value">Cameroun</span>
+                </div>
+                <div class="freelance flex justify-between">
+                    <span class="text">Freelance:</span>
+                    <span class="value text-green">Available</span>
+                </div>
+                <div class="address flex justify-between">
+                    <span class="text">Address:</span>
+                    <span class="value text-sm leading-6">Yaounde, CMR</span>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div class="skills space-y-[9px]">
+                <div class="">
+                    <div class="mb-1 text-black font-medium flex justify-between">
+                        <span>.NET</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="w-full rounded-full h-1.5 mb-4 border border-orange">
+                        <div class="bg-orange h-full rounded-full" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="mb-1 text-black font-medium flex justify-between">
+                        <span>Laravel</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="w-full rounded-full h-1.5 mb-4 border border-orange">
+                        <div class="bg-orange h-full rounded-full" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="mb-1 text-black font-medium flex justify-between">
+                        <span>Vue.js</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="w-full rounded-full h-1.5 mb-4 border border-orange">
+                        <div class="bg-orange h-full rounded-full" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div class="languages space-y-[9px]">
+                <div class="">
+                    <div class="mb-1 text-black font-medium flex justify-between">
+                        <span>French</span>
+                        <span>100%</span>
+                    </div>
+                    <div class="w-full rounded-full h-1.5 mb-4 border border-orange">
+                        <div class="bg-orange h-full rounded-full" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="mb-1 text-black font-medium flex justify-between">
+                        <span>English</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="w-full rounded-full h-1.5 mb-4 border border-orange">
+                        <div class="bg-orange h-full rounded-full" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div class="extraskills space-y-[5px]">
+                <div class="flex justify-between">
+                <span>
+                    <i class="fa-regular fa-clone text-orange"></i>
+                </span>
+                    <div class="text text-gray">Bootstrap, Tailwind Css</div>
+                </div>
+                <div class="flex justify-between">
+                <span>
+                    <i class="fa-regular fa-clone text-orange"></i>
+                </span>
+                    <div class="text text-gray">GIT knowledge</div>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div class="cv">
+                <div class="btn bg-orange">
+                    <div class="content flex justify-evenly">
+                        <a href="assets/documents/CV-Frederick%20Essono.pdf">
+                            <span>DOWNLOAD CV</span>
+                            <span>
+                        <i class="fa-solid fa-download text-black"></i>
+                    </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="">
+                <i class="fa-solid fa-bars fa-2x text-orange cursor-pointer" id="collapsebtn"></i>
+            </div>
+            <section class="hero relative">
+            </section>
+        </div>
+    </div>
+    <div class="right-bar navbar flex flex-col justify-evenly">
+        <div class="flex justify-center">
+            <span class="h-[40px] w-[40px] bg-light-gray rounded-full flex justify-center items-center cursor-pointer">
+                <i class="fa-solid fa-moon"></i>
+            </span>
+        </div>
+        <div class="nav-items flex justify-evenly items-center">
+            <a href="#" class="nav-item h-[40px] w-[40px] rounded-full flex justify-center items-center active">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="#" class="nav-item h-[40px] w-[40px] rounded-full flex justify-center items-center">
+                <i class="fa-solid fa-file-code"></i>
+            </a>
+            <a href="#" class="nav-item h-[40px] w-[40px] rounded-full flex justify-center items-center">
+                <i class="fa-solid fa-user-graduate"></i>
+            </a>
+            <a href="#" class="nav-item h-[40px] w-[40px] rounded-full flex justify-center items-center">
+                <i class="fa-solid fa-briefcase"></i>
+            </a>
+            <a href="#" class="nav-item h-[40px] w-[40px] rounded-full flex justify-center items-center">
+                <i class="fa-solid fa-pen-fancy"></i>
+            </a>
+            <a href="#" class="nav-item h-[40px] w-[40px] rounded-full flex justify-center items-center">
+                <i class="fa-solid fa-message"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>

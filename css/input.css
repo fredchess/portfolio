@@ -10,6 +10,7 @@ body {
 .btn {
     padding: 10px 20px;
     font-weight: 700;
+    border-radius: 5px;
 }
 
 .b-container {
@@ -94,4 +95,13 @@ body {
 
 .main {
     transition: margin-left .5s;
+}
+
+.main .hero {
+    margin: 0 25px;
+    height: 500px;
+    background-color: #FFFFFF;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }

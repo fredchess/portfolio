@@ -11,6 +11,7 @@ body {
     padding: 10px 20px;
     font-weight: 700;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .b-container {
@@ -86,6 +87,34 @@ body {
 }
 
 .nav-items a { background-color: #F0F0F6 }
+
+.nav-item .tooltiptext {
+    width: 110px;
+    top: -35px;
+    left: -37px;
+    right: 0;
+    /*visibility: hidden;*/
+    opacity: 0;
+    padding: 5px 0;
+    background-color: #aaa9a9;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: opacity .5s;
+}
+
+.nav-item:hover .tooltiptext { opacity: 1 }
+
+.nav-item .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #aaa9a9 transparent transparent transparent;
+}
 
 .nav-items a.active { background-color: #FFB400 }
 

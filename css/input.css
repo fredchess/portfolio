@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 * {
     box-sizing: border-box;
 }
@@ -79,11 +84,12 @@ body {
     padding: 50px 34px;
     position: fixed;
     top: 0; right: 0;
+    overflow-y: scroll;
 }
 
 .nav-items {
     flex-direction: column;
-    height: 400px;
+    justify-content: space-between;
 }
 
 .nav-items a { background-color: #F0F0F6 }
@@ -122,15 +128,46 @@ body {
     main
 */
 
+.f-container { padding-right: 108px }
+
 .main {
     transition: margin-left .5s;
+    margin-bottom: 110px;
 }
 
 .main .hero {
     margin: 0 25px;
-    height: 500px;
+    min-height: 500px;
     background-color: #FFFFFF;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.hero .text {
+    padding-left: 60px;
+}
+
+.hero .btns {
+    padding: 60px;
+}
+
+/*Responsive*/
+
+@media (max-width: 700px) {
+    .f-container { padding-right: 0 }
+    .right-bar {
+        left: 0;
+        bottom: 0;
+        top: unset;
+        height: 100px;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .right-bar .nav-items {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
 }
